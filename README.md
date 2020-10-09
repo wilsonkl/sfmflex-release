@@ -13,6 +13,8 @@ These visualizations are included in the supplemental to our paper. We also post
 Please clone this repository. There are HTML files for each scene in the `visualizations` directory. Open these in any web browser (tested: Firefox, Chrome, Safari). 
 
 ### Demo controls
+
+Action | Control
 -------------------
 Rotate the model | `click + drag`
 Translate the model | `altclick + drag`
@@ -20,6 +22,5 @@ Next/previous eigenvector | `j/k`
 Increase/decrease translation scale | `h/l`
 Increase/decrease rotation scale | `g/;`
 Help popup | `?`
--------------------
 
 ## Research Code
