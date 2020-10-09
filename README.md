@@ -78,14 +78,14 @@ Run all of these scripts from the `sfmflex-release/code/` directory.
 
 **Pipeline scripts:**
 These script don't take CLI options---edit their options in the file.
-+ `julia scripts/generate_json_for_vis.jl` : pipeline script to take a BAL-format and produce a json file suitable for running in the visualizer. 
++ `julia scripts/generate_json_for_vis.jl` : pipeline script to take a BAL-formatted SfM problem instance and produce a json file suitable for running in the visualizer. 
 + `julia scripts/run_1dsfm_datasets.jl` : run all the 1dsfm problems through the pipeline and generate vis files.
 
 **Dataset scripts:**
 These are useful for downloading problem instances and converting between file formats.
-+ `julia scripts/download_bal.jl` : scape, download, and decompress all of the BAL datasets. Store them at `dataset/bal/`.
-+ `julia scripts/run_ba_on_bal.jl` : run a bundle adjuster on all BAL problems found. This takes a long time.
-+ `julia scripts/bundle2bal.jl <bundle_file> <bal_file>` : convert problem formats from a bundler .out problem instace to a BAL problem instance.
++ `julia scripts/download_bal.jl` : scape, download, and decompress all of the BAL datasets. Store them at `sfmflex-release/code/dataset/bal/`.
++ `julia scripts/run_ba_on_bal.jl` : run a bundle adjuster on all BAL problems found at `sfmflex-release/code/dataset/bal/`. This takes a long time.
++ `julia scripts/bundle2bal.jl <bundle_file> <bal_file>` : convert problem formats from a bundler `.out` problem instace to a BAL problem instance.
 
 **Preprocessing scripts:**
 These scripts are used within the pipeline scripts.
@@ -94,12 +94,12 @@ These scripts are used within the pipeline scripts.
 
 
 ### Viewing the Visualizations
-To view the interactive visualizations, first run one of the pipeline scripts above to get a json file containing the scene parameters and the computed covariance eigenvectors. Then edit `sfmflex-release/code/vis/vis_supp.html` (line 40) to include that json file. (The include path is relative to the `vis_supp.html` file.) Now open `vis_supp.html` in any web browser.
+To view the interactive visualizations, first run one of the pipeline scripts above to get a json file containing the scene parameters and the computed covariance eigenvectors. Then edit `sfmflex-release/code/vis/vis_supp.html` (line 43) to include that json file. (The include path is relative to the `vis_supp.html` file.) Now open `vis_supp.html` in any web browser.
 
 ### File Formats
 
 **BAL problems**
-The Bundle Adjustment in the Large datasets use the same camera model as Bundler. See the [project page](https://grail.cs.washington.edu/projects/bal/) for details. Notice that unlike Bundler, the 2D coordinate system has its origin at the image center.
+The Bundle Adjustment in the Large datasets use the same camera model as Bundler. See the [BAL project page](https://grail.cs.washington.edu/projects/bal/) for details. Notice that unlike Bundler, the 2D coordinate system has its origin at the image center.
 
 The BAL (and Bundler) cameras map 3D world coordinates `X` into 3D camera-centered coordinates `Y` via `Y = R*X + t`.
 
