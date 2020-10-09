@@ -65,6 +65,12 @@ make
 
 The Julia code also has many dependencies. Install all of these by running `julia deps.jl` from the `code/` directory.
 
+### Datasets
+We have run our method on two datasets: 
+1. [Bundle Adjustment in the Large](https://grail.cs.washington.edu/projects/bal/) problems
+2. [1DSfM](https://research.cs.cornell.edu/1dsfm/) problems
+A script is provided below to scrape and download all of the BAL problems. The 1DSfM problems are available as a single download from the 1DSfM project page.
+
 ### Scripts and bins
 Run all of these scripts from the `code/` directory.
 
@@ -75,6 +81,15 @@ Run all of these scripts from the `code/` directory.
 **Dataset scripts:**
 + `julia scripts/download_bal.jl` : scape, download, and decompress all of the BAL datasets. Store them at `dataset/bal/`.
 + `julia scripts/run_ba_on_bal.jl` : run a bundle adjuster on all BAL problems found. This takes a long time.
++ `julia scripts/bundle2bal.jl <bundle_file> <bal_file>` : convert problem formats from a bundler .out problem instace to a BAL problem instance.
+
+**Pipeline scripts**
+These script don't take CLI options---edit their options in the file.
++ `julia scripts/generate_json_for_vis.jl` : pipeline script to take a BAL-format and produce a json file suitable for running in the visualizer. 
++ `julia scripts/run_1dsfm_datasets.jl` : run all the 1dsfm problems through the pipeline and generate vis files.
+
+### Viewing the Visualizations
+(write this ...)
 
 ### File Formats
 

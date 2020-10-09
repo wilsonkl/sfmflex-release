@@ -1,7 +1,5 @@
 #=
-oct23_experimentA.jl
-
-Run the method on all datasets! Save a .json file for viz, and also save the
+Run the method on all 1dsfm datasets! Save a .json file for viz, and also save the
 eigenvalues, eigenvectors, and timing data for future analysis.
 =#
 
