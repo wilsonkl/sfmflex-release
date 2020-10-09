@@ -35,32 +35,28 @@
     }
   </style>
   <!-- include the scene the quick 'n dirty way -->
-  <!-- script src="ladybug-783.json"></script -->
-  <!-- script src="venice-1544.json"></script -->
+    <script> 
+        // any zeros or missing values here will default 
+        // to the DEF_SCALE_PCTILEth percentile
+        DEFAULT_SCALES = [5000, 5000]
+    </script>
   <script src="sample_scene.json"></script>
-
   <!-- Three.js -->
   <script src="three/build/three.min.js"></script>
   <script src="three/examples/js/controls/OrbitControls.js"></script>
-  <!-- CCapture.js for screen grabs -->
-  <script src="CCapture.all.min.js"></script>
 </head>
 <body>
   <!-- Visualization code  -->
-  <script src="vis.js"></script>
+  <script src="vis_supp.js"></script>
 
   <div id="overlay">Text Overlay</div>
   <div id="kb_overlay">
       <h3>Keyboard Shortcuts</h3>
       <table>
-          <tr> <td>V</td> <td>Toggle static/dynamic visualization mode.</td> </tr>
           <tr> <td>j/k</td> <td>Cycle through eigenvectors.</td> </tr>
           <tr> <td>h/l</td> <td>Increase/decrease eigenvector translation scale.</td> </tr>
           <tr> <td>g/;</td> <td>Increase/decrease eigenvector rotation scale.</td> </tr>
-          <tr> <td>R</td> <td>Begin recording.</td> </tr>
-          <tr> <td>S</td> <td>Reset recorder (before recording a second time).</td> </tr>
           <tr> <td>p</td> <td>Toggle scene point visibility.</td> </tr>
-          <tr> <td>+/_</td> <td>Increase/decrease camera center dot size.</td> </tr>
           <tr> <td>?</td> <td>Toggle keyboard shortcut cheatsheet.</td> </tr>
       </table>
   </div>

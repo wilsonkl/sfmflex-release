@@ -96,7 +96,7 @@ These scripts are used within the pipeline scripts.
 
 
 ### Viewing the Visualizations
-(write this ...)
+To view the interactive visualizations, first run one of the pipeline scripts above to get a json file containing the scene parameters and the computed covariance eigenvectors. Then edit `sfmflex-release/code/vis/vis.html` (line 40) to include that json file. (The include path is relative to the `vis.html` file.) Now open `vis.html` in any web browser.
 
 ### File Formats
 
