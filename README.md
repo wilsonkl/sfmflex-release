@@ -47,6 +47,12 @@ The `C++` targets depend on `Eigen`, `GFlags`, `Glog`, and `hdf5`. They also req
 
 For convenience on Ubuntu: `apt-get install libeigen3-dev libgoogle-glog-dev libgflags-dev libhdf5-dev`
 
+Also, download the header-only library [HighFive](https://github.com/BlueBrain/HighFive):
+```
+mkdir lib && cd lib
+git clone https://github.com/BlueBrain/HighFive.git
+```
+
 To build the `C++` targets:
 ```
 mkdir build
