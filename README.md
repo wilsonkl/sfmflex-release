@@ -25,14 +25,12 @@ Please clone this repository. There are HTML files for each scene in the `visual
 
 Action | Control
 -------|------------
-Toggle static/dynamic visualization mode | `V`
 Toggle scene point visibility | `p`
 Rotate the model | `click + drag`
 Translate the model | `altclick + drag`
 Next/previous eigenvector | `j/k`
 Increase/decrease translation scale | `h/l`
 Increase/decrease rotation scale | `g/;`
-Change camera center dot size (static mode) | `+/-`
 Help popup | `?`
 
 ## Research Code
@@ -96,7 +94,7 @@ These scripts are used within the pipeline scripts.
 
 
 ### Viewing the Visualizations
-To view the interactive visualizations, first run one of the pipeline scripts above to get a json file containing the scene parameters and the computed covariance eigenvectors. Then edit `sfmflex-release/code/vis/vis.html` (line 40) to include that json file. (The include path is relative to the `vis.html` file.) Now open `vis.html` in any web browser.
+To view the interactive visualizations, first run one of the pipeline scripts above to get a json file containing the scene parameters and the computed covariance eigenvectors. Then edit `sfmflex-release/code/vis/vis_supp.html` (line 40) to include that json file. (The include path is relative to the `vis_supp.html` file.) Now open `vis_supp.html` in any web browser.
 
 ### File Formats
 
