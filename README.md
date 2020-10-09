@@ -15,7 +15,7 @@ Please clone this repository. There are HTML files for each scene in the `visual
 ### Demo controls
 
 Action | Control
--------------------
+-------|------------
 Rotate the model | `click + drag`
 Translate the model | `altclick + drag`
 Next/previous eigenvector | `j/k`
