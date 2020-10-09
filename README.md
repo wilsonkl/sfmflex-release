@@ -25,11 +25,14 @@ Please clone this repository. There are HTML files for each scene in the `visual
 
 Action | Control
 -------|------------
+Toggle static/dynamic visualization mode | `V`
+Toggle scene point visibility | `p`
 Rotate the model | `click + drag`
 Translate the model | `altclick + drag`
 Next/previous eigenvector | `j/k`
 Increase/decrease translation scale | `h/l`
 Increase/decrease rotation scale | `g/;`
+Change camera center dot size (static mode) | `+/-`
 Help popup | `?`
 
 ## Research Code
@@ -75,19 +78,22 @@ A script is provided below to scrape and download all of the BAL problems. The 1
 ### Scripts and bins
 Run all of these scripts from the `sfmflex-release/code/` directory.
 
-**Preprocessing scripts:**
-+ `build/bin/compute_jacobian <bal_problem> <jac_file>` : compute the Jacobian of a bundle adjustment problem.
-+ `build/bin/bundle_adjuster` : an all-purpose bundle adjuster, lightly tweaked from the ceres-solver [example](https://github.com/ceres-solver/ceres-solver/blob/master/examples/bundle_adjuster.cc). There are many command line options.
+**Pipeline scripts:**
+These script don't take CLI options---edit their options in the file.
++ `julia scripts/generate_json_for_vis.jl` : pipeline script to take a BAL-format and produce a json file suitable for running in the visualizer. 
++ `julia scripts/run_1dsfm_datasets.jl` : run all the 1dsfm problems through the pipeline and generate vis files.
 
 **Dataset scripts:**
+These are useful for downloading problem instances and converting between file formats.
 + `julia scripts/download_bal.jl` : scape, download, and decompress all of the BAL datasets. Store them at `dataset/bal/`.
 + `julia scripts/run_ba_on_bal.jl` : run a bundle adjuster on all BAL problems found. This takes a long time.
 + `julia scripts/bundle2bal.jl <bundle_file> <bal_file>` : convert problem formats from a bundler .out problem instace to a BAL problem instance.
 
-**Pipeline scripts**
-These script don't take CLI options---edit their options in the file.
-+ `julia scripts/generate_json_for_vis.jl` : pipeline script to take a BAL-format and produce a json file suitable for running in the visualizer. 
-+ `julia scripts/run_1dsfm_datasets.jl` : run all the 1dsfm problems through the pipeline and generate vis files.
+**Preprocessing scripts:**
+These scripts are used within the pipeline scripts.
++ `build/bin/compute_jacobian <bal_problem> <jac_file>` : compute the Jacobian of a bundle adjustment problem.
++ `build/bin/bundle_adjuster` : an all-purpose bundle adjuster, lightly tweaked from the ceres-solver [example](https://github.com/ceres-solver/ceres-solver/blob/master/examples/bundle_adjuster.cc). There are many command line options.
+
 
 ### Viewing the Visualizations
 (write this ...)
