@@ -8,7 +8,7 @@ Propagating uncertainty through an optimization–from measurement uncertainties
 
 In this paper we present a numerically tractable method for computing dominant eigenvectors of the covariance of a Bundle Adjustment solution. We pay careful attention to the mismatched scales of rotational and translational parameters. Finally, we animate this spectral information. The resulting interactive visualizations (included in the supplemental) give insight into the quality and failure modes of a model. We hope that this work is a step towards broader uncertainty-aware computation for Structure from Motion.
 
-![Teaser Figure](docs/teaser_fig.png)
+![Teaser Figure](teaser_fig.png)
 
 ## Overview
 This repository contains:
