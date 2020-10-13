@@ -1,6 +1,8 @@
 # Visualizing Spectral Bundle Adjustment Uncertainty
 Kyle Wilson and Scott Wehrwein, 3DV 2020.
 
+[TODO: embed visualization here.]
+
 ## Abstract
 Bundle adjustment is the gold standard for refining solutions to geometric computer vision problems. This paper develops an uncertainty visualization technique for bundle adjustment solutions to Structure from Motion problems.
 
