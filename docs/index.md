@@ -1,5 +1,5 @@
 # Visualizing Spectral Bundle Adjustment Uncertainty
-Kyle Wilson and Scott Wehrwein, 3DV 2020.
+Kyle Wilson and Scott Wehrwein, 3DV 2020. [(Poster, 9MB pdf)](3dv_poster.pdf)
 
 [TODO: embed visualization here.]
 
