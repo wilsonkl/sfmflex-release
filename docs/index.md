@@ -19,7 +19,7 @@ This repository contains:
 
 ## Visualizations
 Live versions of the visualizations in our paper can be accessed by the links below:
-* [Dubrovnik](http://swehrwein.github.io/sfmflex-vis/Ladybug_demo.html)
+* [Dubrovnik](http://swehrwein.github.io/sfmflex-vis/Dubrovnik_demo.html)
 * [Ladybug](http://swehrwein.github.io/sfmflex-vis/Ladybug_demo.html)
 * [Trafalgar](http://swehrwein.github.io/sfmflex-vis/Trafalgar_demo.html)
 * [Tower of London](http://swehrwein.github.io/sfmflex-vis/TowerOfLondon_demo.html)
