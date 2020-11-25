@@ -1,7 +1,7 @@
 # Visualizing Spectral Bundle Adjustment Uncertainty
 Kyle Wilson and Scott Wehrwein, 3DV 2020. [(Poster, 9MB pdf)](3dv_poster.pdf)
 
-[TODO: embed visualization here.]
+*You can find online interactive versions of our visualizations [here](#visualizations).*
 
 ## Abstract
 Bundle adjustment is the gold standard for refining solutions to geometric computer vision problems. This paper develops an uncertainty visualization technique for bundle adjustment solutions to Structure from Motion problems.
@@ -18,10 +18,15 @@ This repository contains:
 - The research code that produces these visualizations
 
 ## Visualizations
-These visualizations are included in the supplemental to our paper. We also post them here. Please see the supplemental commentary for interpretive remarks. 
+Live versions of the visualizations in our paper can be accessed by the links below:
+* [Dubrovnik](http://swehrwein.github.io/sfmflex-vis/Ladybug_demo.html)
+* [Ladybug](http://swehrwein.github.io/sfmflex-vis/Ladybug_demo.html)
+* [Trafalgar](http://swehrwein.github.io/sfmflex-vis/Trafalgar_demo.html)
+* [Tower of London](http://swehrwein.github.io/sfmflex-vis/TowerOfLondon_demo.html)
+* [Venice](https://facultyweb.cs.wwu.edu/~wehrwes/sfmflex-vis/Venice_demo.html)
+* [Yorkminster](http://swehrwein.github.io/sfmflex-vis/Yorkminster_demo.html)
 
-### How to run the demos
-Please clone this repository. There are HTML files for each scene in the `visualizations` directory. Open these in any web browser (tested: Firefox, Chrome, Safari). 
+These visualizations are included in the supplemental to our paper and in this repository. Please see the supplemental commentary for interpretive remarks.
 
 ### Demo controls
 
@@ -34,6 +39,9 @@ Next/previous eigenvector | `j/k`
 Increase/decrease translation scale | `h/l`
 Increase/decrease rotation scale | `g/;`
 Help popup | `?`
+
+### How to run the demos locally
+Please clone this repository. There are HTML files for each scene in the `visualizations` directory. Open these in any web browser (tested: Firefox, Chrome, Safari). 
 
 ## Research Code
 The code pipeline works as follows:
